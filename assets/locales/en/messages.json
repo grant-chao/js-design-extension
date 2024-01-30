@@ -1,0 +1,10 @@
+{
+    "extensionName": {
+        "message": "js.design Tools",
+        "description": "Name of the extension."
+    },
+    "extensionDescription": {
+        "message": "a js.design tools , that can copy colors into custom variables.",
+        "description": "Description of the extension."
+    }
+}

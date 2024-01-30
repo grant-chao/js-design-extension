@@ -1,0 +1,10 @@
+{
+    "extensionName": {
+        "message": "即时设计辅助工具",
+        "description": "Name of the extension."
+    },
+    "extensionDescription": {
+        "message": "即时设计辅助插件，可以复制颜色为自定义变量。",
+        "description": "Description of the extension."
+    }
+}
