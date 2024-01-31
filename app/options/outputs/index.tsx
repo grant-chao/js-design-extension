@@ -11,11 +11,16 @@ import {useEffect, useState} from "react";
 import { storage } from "~app/storage";
 import {RemoveOutput} from "~app/options/outputs/remove";
 
+export type OutputsProps = {
+    id: string;
+    title: string;
+}
+
 export const Outputs = () => {
-    const [data, setData] = useState<any[]>([]);
+    const [data, setData] = useState<OutputsProps[]>([]);
 
     const load = async () => {
-        const outputs = await storage.get<any[]>("outputs");
+        const outputs = await storage.get<OutputsProps[]>("outputs");
         setData(outputs || [])
     }
 

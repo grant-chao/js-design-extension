@@ -1,4 +1,5 @@
-import {BaseOptions} from "~app/options/base";
+import {EnableSetting} from "~app/options/base/enable";
+import {OutputSetting} from "~app/options/base/output";
 
 export const Popup = () => {
     const openOptions = () => {
@@ -6,8 +7,9 @@ export const Popup = () => {
     }
 
     return <div className={"bg-secondary w-[260px]"}>
-        <div className={"p-4 bg-white rounded-b-xl"}>
-            <BaseOptions />
+        <div className={"p-4 bg-white rounded-b-xl space-y-4"}>
+            <EnableSetting />
+            <OutputSetting />
         </div>
         <div className={"px-4 py-2 flex justify-center items-center"}>
             <div className={"cursor-pointer"} onClick={openOptions}>

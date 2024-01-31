@@ -27,8 +27,6 @@ export type AddOutputProps = {
     onSuccess?: () => void;
 }
 
-
-
 export const AddOutput: FC<AddOutputProps> = (props) => {
     const { data, onSuccess } = props;
     const [open, setOpen] = useState<boolean>(false);
